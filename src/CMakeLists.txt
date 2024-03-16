@@ -10,6 +10,11 @@ target_sources( base
 		tp1_cpp/strategie/Dormance.cpp tp1_cpp/strategie/CroissancePrintaniere.cpp tp1_cpp/strategie/CroissanceEstivale.cpp tp1_cpp/strategie/Secheresse.cpp
 )
 
+target_sources( base
+  PRIVATE
+	tp1_cpp/Terrain.cpp tp1_cpp/fabrique/FabriqueBase.cpp
+)
+
 target_include_directories( base
   PUBLIC "." )
 
