@@ -167,3 +167,26 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 //    [...] // Traitement tour à tour
 // }
 
+
+// Fabrique
+
+// Pour manipuler d'avantage d'elements, créer une classe Terrain en charge de gérer
+// un ensemble de Vegetal:
+// - Stocket les Vegetal dans un std::vector<std::unique_ptr<Vegetal>>.
+// - Faire croitre l'ensemble des Vegetal.
+// Pour instancier rapidement les Vegetal, les Vegetal à créer sont stockés dans un
+// fichier sous la forme:
+// - Une ligne par Vegetal.
+// - Ligne au format: "<type> [<tailleMax>]" où <type> est soit "Arbre" soit "Fleur" et
+//   <tailleMax> est un flottant présent uniquement pour les fleurs.
+//
+// Ex de lecture dans un fichier :
+// std::ifstream fichier("mon_fichier.txt");
+// std::string ligne;
+// while (std::getline(fichier, ligne))
+// {
+// 	  std::istringstream iss(ligne);
+//    std::string type;
+//    iss >> type;
+//    [...]
+
