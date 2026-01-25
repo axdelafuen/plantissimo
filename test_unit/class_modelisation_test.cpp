@@ -190,3 +190,17 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 //    iss >> type;
 //    [...]
 
+
+// Fabrique abstraite
+
+// La modélisation actuel correspond à un climat tempéré.
+// Le but est maintenant de rajouter le choix du climat au démarrage de
+// l'application.
+// L'ensemble des espèces se comportant différemment en fonction du climat,
+// créer une hierarchie pour chaque type de Vegetal représentant les climats.
+// Ex: ArbreTempere et ArbreTropical héritent de Arbre.
+// Mettre en place une fabrique abstraite pour permettre d'isoler la logique
+// de création en fonction du climat et ainsi garantir que l'ensemble des Vegetal
+// créés sont bien de la même famille.
+
+
