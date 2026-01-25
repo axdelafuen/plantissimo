@@ -127,3 +127,43 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 	EXPECT_NEAR(maFleur.getTaille(), 0.05, TP1_EPSILON);
 }
 
+// CMake
+
+// L'ajout d'un fichier cpp doit être explicité dans les fichiers CMakeLists.txt.
+//
+// Pour un fichier de test, ce sera dans test_unit/CMakeLists.txt là où est
+// ajouté ce fichier "class_modelisation_test.cpp".
+// Pour un fichier source de l'application, ce sera dans src/CMakeLists.txt là
+// où est ajouté le fichier "Vegeral.cpp" par exemple.
+
+
+
+// Stratégie
+
+// La classe arbre est simpliste. Elle croit toujours de 1.
+// Pour rendre les choses plus réalistes, on va permettre aux arbres de croitre
+// différement selon l'environnement.
+
+// Dans l'application:
+//   - Instancier un arbre.
+//   - Proposer un prompt à l'utilisateur
+//   - Selon le choix, changer potentiellement les conditions de croissance de l'arbre.
+//   - Faire croitre l'arbre.
+// Ex de prise en compte des input utilisateur :
+//
+// while (true)
+// {
+//    int choix = 0;
+//    std::cout << "Choix : 0-Quitter, 1-Pas de changement, 2-Dormance, 3-CroissancePrintaniere, 4-CroissanceEstivale, 5-Secheresse" << std::endl;
+//    std::cin >> choix;
+//    switch (choix)
+//    {
+//			case 0: break;
+//			case 1: break;
+//			case 2: [...] break;
+//			[...]
+//    }
+//    if (choix == 0) break; // Quitte la boucle while (true)
+//    [...] // Traitement tour à tour
+// }
+
