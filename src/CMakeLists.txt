@@ -3,7 +3,7 @@ add_library( base )
 
 target_sources( base
   PRIVATE
-    tp1_cpp/Vegetal.cpp tp1_cpp/Arbre.cpp tp1_cpp/Fleur.cpp
+    tp1_cpp/Vegetal.cpp tp1_cpp/Arbre.cpp tp1_cpp/Fleur.cpp tp1_cpp/Champignon.cpp
 )
 
 target_include_directories( base

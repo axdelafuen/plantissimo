@@ -204,3 +204,10 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 // créés sont bien de la même famille.
 
 
+// Adapteur
+
+// Une classe Champignon est disponible dans les fichier Champignon.hpp et Champignon.cpp.
+// Cette classe ne doit pas être modifiée.
+// Rajouter quelques lignes avec un type "Champignon" dans le fichier de configuration.
+// Faire en sorte qu'il soit possible de l'utiliser.
+
