@@ -1,6 +1,6 @@
 #include "Vegetal.hpp"
 
-float Vegetal::getTaille()
+float Vegetal::getTaille() const
 {
     return mTaille;
 }

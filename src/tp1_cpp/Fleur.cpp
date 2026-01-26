@@ -1,9 +1,7 @@
 #include "Fleur.hpp"
 
-Fleur::Fleur(float max)
-{
-    tailleMax = max;
-}
+Fleur::Fleur(float max): tailleMax(max)
+{}
 
 void Fleur::croissance()
 {

@@ -4,7 +4,7 @@ class Vegetal
 {
     public:
         virtual void croissance() = 0;
-        float getTaille();
+        float getTaille() const;
     protected:
         void setTaille(float taille);
     private:
