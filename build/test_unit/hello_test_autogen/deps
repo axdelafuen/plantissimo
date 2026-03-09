@@ -1,0 +1,8 @@
+hello_test_autogen/timestamp: \
+	/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/test_unit/CMakeLists.txt \
+	/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/test_unit/hello_test.cpp \
+	/usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake \
+	/usr/share/cmake/Modules/FetchContent.cmake \
+	/usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in \
+	/usr/share/cmake/Modules/GoogleTest.cmake \
+	/usr/bin/cmake

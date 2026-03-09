@@ -1,0 +1,183 @@
+{
+	"BUILD_DIR" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/base_autogen",
+	"CMAKE_BINARY_DIR" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/base_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "base_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Arbre.hpp",
+			"Mu",
+			"D5QNHB5QR5/moc_Arbre.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Champignon.hpp",
+			"Mu",
+			"D5QNHB5QR5/moc_Champignon.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Fleur.hpp",
+			"Mu",
+			"D5QNHB5QR5/moc_Fleur.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Terrain.hpp",
+			"Mu",
+			"D5QNHB5QR5/moc_Terrain.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Vegetal.hpp",
+			"Mu",
+			"D5QNHB5QR5/moc_Vegetal.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/fabrique/FabriqueBase.hpp",
+			"Mu",
+			"YXNRABQYNB/moc_FabriqueBase.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/CroissanceEstivale.hpp",
+			"Mu",
+			"3REAZVMQMY/moc_CroissanceEstivale.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/CroissancePrintaniere.hpp",
+			"Mu",
+			"3REAZVMQMY/moc_CroissancePrintaniere.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/Dormance.hpp",
+			"Mu",
+			"3REAZVMQMY/moc_Dormance.cpp",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/Secheresse.hpp",
+			"Mu",
+			"3REAZVMQMY/moc_Secheresse.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/base_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/base_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src",
+		"/usr/include/c++/15.2.1",
+		"/usr/include/c++/15.2.1/x86_64-pc-linux-gnu",
+		"/usr/include/c++/15.2.1/backward",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include",
+		"/usr/local/include",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++17",
+		"-w",
+		"-dM",
+		"-E",
+		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/base_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/CMakeFiles/base_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 10,
+	"SETTINGS_FILE" : "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/src/CMakeFiles/base_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Arbre.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Champignon.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Fleur.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Terrain.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/Vegetal.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/fabrique/FabriqueBase.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/CroissanceEstivale.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/CroissancePrintaniere.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/Dormance.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/src/tp1_cpp/strategie/Secheresse.cpp",
+			"Mu",
+			null
+		]
+	],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

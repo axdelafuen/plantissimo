@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "HelloTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "BasicAssertions",
+          "file": "\/home\/axlr\/zizima\/2A\/s2\/poo-avancee\/plantissimo\/test_unit\/hello_test.cpp",
+          "line": 7
+        }
+      ]
+    }
+  ]
+}

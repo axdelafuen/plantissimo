@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/TP1.dir/link.d CMakeFiles/TP1.dir/TP1_autogen/mocs_compilation.cpp.o CMakeFiles/TP1.dir/main.cpp.o -o ../bin/TP1  ../lib/libbase.a
