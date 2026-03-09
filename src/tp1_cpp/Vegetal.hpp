@@ -1,12 +1,20 @@
 #pragma once
 
+#include <string>
+
 class Vegetal
 {
-    public:
-        virtual void croissance() = 0;
-        float getTaille() const;
-    protected:
-        void setTaille(float taille);
-    private:
-        float mTaille = 0;
+	public:
+		virtual ~Vegetal() = default;
+
+		double getTaille() const;
+
+		virtual void croissance() = 0;
+		virtual std::string getType() const = 0;
+
+	protected:
+		void setTaille(double taille);
+
+	private:
+		double mTaille = 0;
 };

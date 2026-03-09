@@ -1,13 +1,19 @@
 #include "Fleur.hpp"
 
-Fleur::Fleur(float max): tailleMax(max)
-{}
+#include <algorithm>
+#include <string>
+
+Fleur::Fleur(double tailleMax)
+	: mTailleMax(tailleMax)
+{
+}
 
 void Fleur::croissance()
 {
-    float newTaille = getTaille() + 0.1f;
-    if (newTaille <= tailleMax)
-        setTaille(newTaille);
-    else
-        setTaille(tailleMax);
+	setTaille(std::min(mTailleMax, getTaille() + 0.1));
+}
+
+std::string Fleur::getType() const
+{
+	return "Fleur";
 }

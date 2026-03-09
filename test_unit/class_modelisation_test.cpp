@@ -127,3 +127,87 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 	EXPECT_NEAR(maFleur.getTaille(), 0.05, TP1_EPSILON);
 }
 
+// CMake
+
+// L'ajout d'un fichier cpp doit être explicité dans les fichiers CMakeLists.txt.
+//
+// Pour un fichier de test, ce sera dans test_unit/CMakeLists.txt là où est
+// ajouté ce fichier "class_modelisation_test.cpp".
+// Pour un fichier source de l'application, ce sera dans src/CMakeLists.txt là
+// où est ajouté le fichier "Vegeral.cpp" par exemple.
+
+
+
+// Stratégie
+
+// La classe arbre est simpliste. Elle croit toujours de 1.
+// Pour rendre les choses plus réalistes, on va permettre aux arbres de croitre
+// différement selon l'environnement.
+
+// Dans l'application:
+//   - Instancier un arbre.
+//   - Proposer un prompt à l'utilisateur
+//   - Selon le choix, changer potentiellement les conditions de croissance de l'arbre.
+//   - Faire croitre l'arbre.
+// Ex de prise en compte des input utilisateur :
+//
+// while (true)
+// {
+//    int choix = 0;
+//    std::cout << "Choix : 0-Quitter, 1-Pas de changement, 2-Dormance, 3-CroissancePrintaniere, 4-CroissanceEstivale, 5-Secheresse" << std::endl;
+//    std::cin >> choix;
+//    switch (choix)
+//    {
+//			case 0: break;
+//			case 1: break;
+//			case 2: [...] break;
+//			[...]
+//    }
+//    if (choix == 0) break; // Quitte la boucle while (true)
+//    [...] // Traitement tour à tour
+// }
+
+
+// Fabrique
+
+// Pour manipuler d'avantage d'elements, créer une classe Terrain en charge de gérer
+// un ensemble de Vegetal:
+// - Stocket les Vegetal dans un std::vector<std::unique_ptr<Vegetal>>.
+// - Faire croitre l'ensemble des Vegetal.
+// Pour instancier rapidement les Vegetal, les Vegetal à créer sont stockés dans un
+// fichier sous la forme:
+// - Une ligne par Vegetal.
+// - Ligne au format: "<type> [<tailleMax>]" où <type> est soit "Arbre" soit "Fleur" et
+//   <tailleMax> est un flottant présent uniquement pour les fleurs.
+//
+// Ex de lecture dans un fichier :
+// std::ifstream fichier("mon_fichier.txt");
+// std::string ligne;
+// while (std::getline(fichier, ligne))
+// {
+// 	  std::istringstream iss(ligne);
+//    std::string type;
+//    iss >> type;
+//    [...]
+
+
+// Fabrique abstraite
+
+// La modélisation actuel correspond à un climat tempéré.
+// Le but est maintenant de rajouter le choix du climat au démarrage de
+// l'application.
+// L'ensemble des espèces se comportant différemment en fonction du climat,
+// créer une hierarchie pour chaque type de Vegetal représentant les climats.
+// Ex: ArbreTempere et ArbreTropical héritent de Arbre.
+// Mettre en place une fabrique abstraite pour permettre d'isoler la logique
+// de création en fonction du climat et ainsi garantir que l'ensemble des Vegetal
+// créés sont bien de la même famille.
+
+
+// Adapteur
+
+// Une classe Champignon est disponible dans les fichier Champignon.hpp et Champignon.cpp.
+// Cette classe ne doit pas être modifiée.
+// Rajouter quelques lignes avec un type "Champignon" dans le fichier de configuration.
+// Faire en sorte qu'il soit possible de l'utiliser.
+

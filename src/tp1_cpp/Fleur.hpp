@@ -1,12 +1,15 @@
 #pragma once
 
-#include <tp1_cpp/Vegetal.hpp>
+#include "Vegetal.hpp"
 
-class Fleur: public Vegetal
+class Fleur : public Vegetal
 {
-    public:
-        Fleur(float max);
-        void croissance() override;
-    private:
-        float tailleMax;
+	public:
+		Fleur(double tailleMax);
+
+		void croissance() override;
+		std::string getType() const override;
+
+	private:
+		double mTailleMax;
 };

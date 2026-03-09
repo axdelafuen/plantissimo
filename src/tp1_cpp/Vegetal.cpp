@@ -1,11 +1,11 @@
 #include "Vegetal.hpp"
 
-float Vegetal::getTaille() const
+double Vegetal::getTaille() const
 {
-    return mTaille;
+	return mTaille;
 }
 
-void Vegetal::setTaille(float taille)
+void Vegetal::setTaille(double taille)
 {
-    mTaille = taille;
+	mTaille = taille;
 }
