@@ -1,4 +1,3 @@
-
 #include "Arbre.hpp"
 
 #include "strategie/ICroissance.hpp"
