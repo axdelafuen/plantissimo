@@ -211,3 +211,20 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 // Rajouter quelques lignes avec un type "Champignon" dans le fichier de configuration.
 // Faire en sorte qu'il soit possible de l'utiliser.
 
+// Decorateur
+
+// Pour ne pas avoir à créer chacun des types de vegetaux, proposer une solution
+// alternative utilisant :
+// - Une classe VegetalGeneric
+// - Le pattern decorateur
+// Une instanciation d'arbre serait de la forme :
+// auto monArbre = new CroissanceStrategieDecorateur(new VegetalGenerique())
+// Une instanciation de fleur serait de la forme :
+// auto maFleur = ne
+// 	 LimiteCroissanceMaxDecorateur(
+//   	 new CroissanceSpecific(
+//        new VegetalGenerique(),
+//        0.1),
+//     1.0)
+//   );
+
