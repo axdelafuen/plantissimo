@@ -1,4 +1,3 @@
-
 #include "Fleur.hpp"
 
 #include <algorithm>

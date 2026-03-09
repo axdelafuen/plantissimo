@@ -1,4 +1,3 @@
-
 #include "Vegetal.hpp"
 
 double Vegetal::getTaille() const
