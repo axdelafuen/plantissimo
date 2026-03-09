@@ -1,5 +1,0 @@
-if(EXISTS "/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/test_unit/cpp_test[1]_tests.cmake")
-  include("/home/axlr/zizima/2A/s2/poo-avancee/plantissimo/build/test_unit/cpp_test[1]_tests.cmake")
-else()
-  add_test(cpp_test_NOT_BUILT cpp_test_NOT_BUILT)
-endif()
