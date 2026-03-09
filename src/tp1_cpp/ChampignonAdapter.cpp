@@ -11,7 +11,7 @@ double ChampignonAdapter::getTaille() const
 
 void ChampignonAdapter::croissance()
 {
-    _champignon->pousse(ChampignonAdapter::Meteo::Soleil);
+    _champignon->pousse(Champignon::Meteo::Soleil);
 }
 
 std::string ChampignonAdapter::getType()
