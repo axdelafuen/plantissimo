@@ -1,4 +1,5 @@
 #include "Fleur.hpp"
+#include "visitor/IVistor.h"
 
 #include <algorithm>
 #include <string>
@@ -16,4 +17,9 @@ void Fleur::croissance()
 std::string Fleur::getType() const
 {
 	return "Fleur";
+}
+
+void Fleur::accept(IVisitor& visitor) const
+{
+	visitor.visit(*this);
 }

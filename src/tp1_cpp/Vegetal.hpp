@@ -2,6 +2,8 @@
 
 #include <string>
 
+class IVisitor;
+
 class Vegetal
 {
 	public:
@@ -11,6 +13,7 @@ class Vegetal
 
 		virtual void croissance() = 0;
 		virtual std::string getType() const = 0;
+		virtual void accept(IVisitor& visitor) const = 0;
 
 	protected:
 		void setTaille(double taille);

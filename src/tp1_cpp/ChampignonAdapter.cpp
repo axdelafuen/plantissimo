@@ -1,6 +1,6 @@
 #include "ChampignonAdapter.hpp"
 
-ChampignonAdapter::ChampignonAdapter(Champignon& champignon)
+ChampignonAdapter::ChampignonAdapter(std::unique_ptr<Champignon> champignon)
     :_champignon(std::move(champignon))
 {}
 
@@ -11,10 +11,15 @@ double ChampignonAdapter::getTaille() const
 
 void ChampignonAdapter::croissance()
 {
-    _champignon->pousse(ChampignonAdapter::Meteo::Soleil);
+    _champignon->pousse(Champignon::Meteo::Soleil);
 }
 
-std::string ChampignonAdapter::getType()
+std::string ChampignonAdapter::getType() const
 {
     return "Champignon";
+}
+
+void ChampignonAdapter::accept(IVisitor& visitor) const
+{
+    visitor.visit(*this);
 }

@@ -1,4 +1,5 @@
 #include "Arbre.hpp"
+#include "visitor/IVistor.h"
 
 #include "strategie/ICroissance.hpp"
 
@@ -25,5 +26,10 @@ std::string Arbre::getType() const
 void Arbre::setStrategieCroissance(ICroissance* croissance)
 {
 	mStrategieCroissance = croissance;
+}
+
+void Arbre::accept(IVisitor& visitor) const
+{
+	visitor.visit(*this);
 }
 

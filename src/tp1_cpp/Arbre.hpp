@@ -10,6 +10,7 @@ class Arbre : public Vegetal, public IStratCroissance
 	public:
 		void croissance() override;
 		std::string getType() const override;
+		void accept(IVisitor& visitor) const override;
 
 		void setStrategieCroissance(ICroissance* croissance) override;
 

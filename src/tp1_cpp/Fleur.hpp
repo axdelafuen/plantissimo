@@ -9,6 +9,7 @@ class Fleur : public Vegetal
 
 		void croissance() override;
 		std::string getType() const override;
+		void accept(IVisitor& visitor) const override;
 
 	private:
 		double mTailleMax;
